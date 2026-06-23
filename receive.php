@@ -1,19 +1,4 @@
 <?php
-/**
- * ╔══════════════════════════════════════════════════════════════╗
- * ║  KomposMeter IoT — API Endpoint                             ║
- * ║  File   : api/receive.php                                   ║
- * ║  Method : POST (JSON body)                                  ║
- * ║  Server : https://zipultekno.shop/api/receive.php           ║
- * ╚══════════════════════════════════════════════════════════════╝
- *
- * Cara pasang di server:
- *  1. Upload file ini ke folder  /public_html/api/receive.php
- *  2. Import db_komposmeter.sql ke phpMyAdmin / MySQL
- *  3. Isi kredensial DB di bagian KONFIGURASI DATABASE di bawah
- *  4. Buat file /public_html/api/.htaccess (ada di bawah)
- */
-
 // ─── KONFIGURASI DATABASE ────────────────────────────────────────
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'db_komposmeter');   // sesuaikan nama database Anda
@@ -27,11 +12,6 @@ define('TELEGRAM_CHAT_ID', 'MASUKKAN_CHAT_ID_TELEGRAM_DISINI');
 
 // ─── KONFIGURASI EMAIL NOTIFIKASI ───────────────────────────────
 define('NOTIFICATION_EMAIL', 'use your email here');
-
-// ─── KEAMANAN: Kunci API (opsional) ─────────────────────────────
-// Jika ingin mengamankan endpoint, uncomment baris berikut dan
-// tambahkan header "X-API-Key: kompos_secret_123" di kode Arduino
-// define('API_KEY', 'kompos_secret_123');
 
 // ─────────────────────────────────────────────────────────────────
 header('Content-Type: application/json; charset=utf-8');
