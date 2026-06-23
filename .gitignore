@@ -1,0 +1,18 @@
+# Arduino IDE build and temporary files
+/build/
+/libraries/
+*.hex
+*.elf
+*.bin
+
+# Local config or sensitive files
+*.local
+private.h
+
+# Editor / OS files
+.idea/
+.vs/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
