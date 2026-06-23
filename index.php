@@ -1,9 +1,4 @@
 <?php
-// ============================================================
-//  index.php — KomposMeter IoT Dashboard
-//  Pendeteksi Kematangan Pupuk Kandang Kohe Kambing
-//  Mokhammad Saifulloh Al Azis / 2202041091 / FTI UNWAHA
-// ============================================================
 require_once __DIR__ . '/includes/functions.php';
 
 // ── Ambil data dari database ─────────────────────────────────
@@ -507,9 +502,6 @@ function initChart(labels, suhu, humid, amonia) {
 
 initChart(chartLabels, chartSuhu, chartHumid, chartAmonia);
 
-/* ════════════════════════════════════════════════════════════
-    LOAD CHART — ganti rentang waktu via AJAX
-════════════════════════════════════════════════════════════ */
 function loadChart(hours, btn) {
   document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
